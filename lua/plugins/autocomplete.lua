@@ -21,6 +21,7 @@ return { -- Autocompletion
           end,
         },
       },
+      config = function() end,
       opts = {},
     },
     'folke/lazydev.nvim',

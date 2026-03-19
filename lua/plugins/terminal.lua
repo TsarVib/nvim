@@ -2,6 +2,6 @@ return {
   'akinsho/toggleterm.nvim',
   version = '*',
   config = function()
-    require('toggleterm').setup { shell = 'pwsh' }
+    require('toggleterm').setup { shell = 'zsh' }
   end,
 }

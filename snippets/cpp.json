@@ -20,5 +20,33 @@
                 "    return 0;",
                 "}"
             ]
+        },
+        "Ros2 Publisher": {
+            "prefix": "rospub",
+            "body": [
+                "#include \"std_msgs/msg/float64.hpp\"",
+                "#include <memory>",
+                "#include <rclcpp/executors.hpp>",
+                "#include <rclcpp/node.hpp>",
+                "#include <rclcpp/rclcpp.hpp>",
+                "#include <rclcpp/utilities.hpp>",
+                "",
+                "using namespace std::chrono_literals;",
+                "",
+                "class $1 : public rclcpp::Node {",
+                "private:",
+                "public:",
+                "  $1() : Node(\"$2\") {}",
+                "",
+                "};",
+                "",
+                "int main(int argc, char *argv[]) {",
+                "  rclcpp::init(argc, argv);",
+                "  rclcpp::spin(std::make_shared<$1>());",
+                "  rclcpp::shutdown();",
+                "",
+                "  return 0;",
+                "}"
+            ]
         }
 }

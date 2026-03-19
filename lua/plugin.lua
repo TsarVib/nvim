@@ -4,6 +4,7 @@ require('lazy').setup({
   require 'plugins.flutter',
   require 'plugins.whichkey',
   require 'plugins.telescope',
+  require 'plugins.image',
   {
     'folke/lazydev.nvim',
     ft = 'lua',
@@ -26,6 +27,12 @@ require('lazy').setup({
     'windwp/nvim-autopairs',
     event = 'InsertEnter',
     opts = {},
+  },
+  {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end,
   },
   {
     'xeluxee/competitest.nvim',
