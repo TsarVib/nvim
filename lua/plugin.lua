@@ -4,7 +4,6 @@ require('lazy').setup({
   require 'plugins.flutter',
   require 'plugins.whichkey',
   require 'plugins.telescope',
-  require 'plugins.image',
   {
     'folke/lazydev.nvim',
     ft = 'lua',
@@ -42,6 +41,7 @@ require('lazy').setup({
     end,
   },
   require 'plugins.discord',
+  require 'plugins.fold',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
