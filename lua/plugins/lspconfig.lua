@@ -96,16 +96,6 @@ return {
         cmd = { 'C:/msys64/mingw64/bin/clangd.exe' },
       },
       gopls = {},
-      basedpyright = {
-        settings = {
-          basedpyright = {
-            analysis = {
-              typeCheckingMode = 'off',
-              diagnosticMode = 'openFilesOnly',
-            },
-          },
-        },
-      },
       rust_analyzer = {},
       ts_ls = {},
       lua_ls = {
